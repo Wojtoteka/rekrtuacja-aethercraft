@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekrutacja Aethercraft.pl</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <!-- Dodane logo -->
+        <div>
+        </div>
+        <h1>Rekrutacja Aethercraft.pl</h1>
+        <p>Wybierz rolę, na jaką chcesz przeprowadzić rekrutację</p>
+    </header>
+    <main>
+        <div class="button-container">
+            <button onclick="showForm('helper')">Helper</button>
+            <button onclick="showForm('builder')">Budowniczy</button>
+            <button onclick="showForm('technician')">Technik</button>
+        </div>
+        <div id="form-container">
+            <!-- Formularze będą wstawiane dynamicznie -->
+        </div>
+    </main>
+    <a href="https://discord.gg/5TmxzQ7aYs" class="discord-button" target="_blank">Discord</a>
+</body>
+<script>
+    function showForm(role) {
+        const formContainer = document.getElementById('form-container');
+        let iframe;
+
+        switch (role) {
+            case 'helper':
+                iframe = `<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSef_WlcXpvq9GKTFIDjPVWntLCgJ4D3FjBHgeNIuSqEHWtzZA/viewform?embedded=true" width="640" height="3009" frameborder="0" marginheight="0" marginwidth="0">Ładuję…</iframe>`;
+                break;
+            case 'builder':
+                iframe = `<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd9Zrh7q4Nq2xmKG6H78aU_bLS3qfMQ-ggDVQWVSv6AvMPbHQ/viewform?embedded=true" width="640" height="1935" frameborder="0" marginheight="0" marginwidth="0">Ładuję…</iframe>`;
+                break;
+            case 'technician':
+                iframe = `<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSczr6ytPrnputn3O8prQIf3HosWNODT4lI2yqfgNkEnQIVIXg/viewform?embedded=true" width="640" height="1928" frameborder="0" marginheight="0" marginwidth="0">Ładuję…</iframe>`;
+                break;
+        }
+
+        formContainer.innerHTML = iframe;
+    }
+</script>
+</html>

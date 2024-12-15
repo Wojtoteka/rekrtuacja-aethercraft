@@ -1,0 +1,82 @@
+/* Resetowanie domyślnych stylów */
+body, h1, p, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black; /* Tło strony czarne */
+    color: white; /* Ogólny kolor tekstu biały */
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 3em; /* Większy rozmiar tekstu */
+    color: white; /* Kolor napisu */
+    font-weight: bold; /* Pogrubienie tekstu */
+    text-transform: uppercase; /* Tekst wielkimi literami */
+    letter-spacing: 3px; /* Odstępy między literami */
+    margin-bottom: 20px; /* Większy odstęp od kolejnych elementów */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), 
+                 0 0 15px rgba(255, 255, 255, 0.4); /* Cień i delikatna poświata */
+    font-family: 'Arial', sans-serif; /* Użycie standardowej czcionki */
+}
+
+p {
+    font-size: 1.2em; /* Rozmiar tekstu pod nagłówkiem */
+    color: #ddd; /* Jasnoszary kolor tekstu */
+    margin-top: 10px; /* Dystans od nagłówka */
+}
+
+.button-container {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #1E90FF; /* Ładniejszy odcień niebieskiego */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 1rem;
+    border-radius: 8px; /* Zaokrąglenie przycisków */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Cień dla przycisków */
+}
+
+button:hover {
+    background-color: #104E8B; /* Przyciemnienie na hover */
+    transform: scale(1.05); /* Efekt powiększenia */
+}
+
+#form-container {
+    margin-top: 20px;
+}
+
+/* Styl przycisku Discord */
+.discord-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #5865F2; /* Kolor przycisku Discord */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.discord-button:hover {
+    background-color: #404EED; /* Przyciemnienie koloru na hover */
+    transform: scale(1.1); /* Efekt powiększenia */
+}
